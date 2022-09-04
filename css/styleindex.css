@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-repeat: none;
+    background-attachment: fixed;
+    background-image: url(../Img/capas\ geográficas-04.png);
+}
+
+h1{
+    color:black;
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2{
+    color:black;
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+p{
+    color: black;
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+#mainNav{
+    grid-area: nav;
+}
+
+#header{ 
+    grid-area: header;
+}
+
+#metodologia{
+    grid-area: main;
+}
+
+#beneficios{
+    grid-area: aside;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+.botonera{
+    background-color: aquamarine;
+    position: sticky;
+    margin-top: 0%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.botoneraImg{
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.botonera_ul{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.botonera_a{
+    color: black;
+    text-decoration: none;
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.textBold{
+    font-weight: bold;
+}
+
+.image_size{
+    height: auto;
+    margin-left: 0%;
+    width: 100vw;
+    width: 100%;
+}
+
+.h1_ubicacion{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.metodologia{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+.beneficios{
+    text-align: left;
+    margin-left:auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
+    background-color: aquamarine;
+}
+
+.footer_p{
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .contenedor{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
+    }
+}
+    
+@media (min-width: 1024px) {
+    
+    .contenedor{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+
+main h2{
+    margin-left: 80px;
+}
+
+main p{
+    width: 450px;
+    margin-left: 80px
+}
+
+    .botonera{
+        flex-direction: row;
+    }
+
+    .botonera_ul{
+        margin-right: 5px;
+    }
+
+    .h1sherpo{
+        margin-right: 350px;
+        margin-left: 5px;
+    }
+
+    .botonera img{
+        margin-bottom: 0;
+        margin-left: 5px;
+    }
+
+
+}
