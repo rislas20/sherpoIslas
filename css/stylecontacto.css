@@ -99,6 +99,7 @@ label{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 15px;
+    cursor: pointer;
 }
 
 .footer{
@@ -133,6 +134,11 @@ margin-left: 150px;
 
 .mapa_acomodo{
     margin-top: 0;
+    padding-bottom: 50px;
+}
+
+.cursorPointer{
+    cursor: pointer;
 }
 
 @media (min-width: 606px){

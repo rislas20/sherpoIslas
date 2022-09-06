@@ -96,6 +96,7 @@ p{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 15px;
+    cursor: pointer;
 }
 
 .header{
@@ -123,6 +124,15 @@ p{
 
 .footer_p{
     font-size: 1.5rem;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.scaleVideo:hover{
+    transform: scale(0.95);
+    transition: transform 1s;
 }
 
 @media (min-width: 768px){

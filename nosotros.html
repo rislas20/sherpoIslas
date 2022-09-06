@@ -7,6 +7,7 @@
     <title>Sherpo.mx</title>
     <link rel="shortcut icon" href="Img/Captura de Pantalla 2022-07-05 a la(s) 11.31.09.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
 <div class="contenedor">
@@ -28,21 +29,27 @@
         </ul>
     </nav>
     <header id="header" class="header">
-        <h2>¿Por qué Sherpo?</h2>
+        <h2 class="wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="0s">¿Por qué Sherpo?</h2>
     </header>
     <main id="main" class="main">   
-        <p>Sherpo nace del concepto <span class="textItalic">Sherpa</span>, aquel guía nativo de las regiones montañosas del Himalaya que conoce las mejores rutas y facilita la llegada a las cimas más altas del planeta.</p>
-        <p >Nuestra intención es guiar a nuestros clientes a cumplir con sus objetivos en el menor tiempo y con la mejor estrategia posible en todo momento.</p>
-        <p class="textBold">Somos consultores certificados por <span class="textItalic">UCLA Business School</span> y con una amplia experiencia en estrategias comerciales, ventas, prospección, automatización de canales comerciales y emprendimiento, tanto en modelos B2B como B2C.</p>
+        <p class="wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="0s">Sherpo nace del concepto <span class="textItalic">Sherpa</span>, aquel guía nativo de las regiones montañosas del Himalaya que conoce las mejores rutas y facilita la llegada a las cimas más altas del planeta.</p>
+        <p class="wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="0s">Nuestra intención es guiar a nuestros clientes a cumplir con sus objetivos en el menor tiempo y con la mejor estrategia posible en todo momento.</p>
+        <p class="textBold wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="0s">Somos consultores certificados por <span class="textItalic">UCLA Business School</span> y con una amplia experiencia en estrategias comerciales, ventas, prospección, automatización de canales comerciales y emprendimiento, tanto en modelos B2B como B2C.</p>
     </main>
     <aside id="aside" class="aside">
-        <img src="./Img/Sherpa-02-02.png" alt="sherpa escanalndo">
+        <img class="wow animate__backInRight" data-wow-duration="1.5s" data-wow-delay="0s"  src="./Img/Sherpa-02-02.png" alt="sherpa escanalndo">
     </aside>
     <footer id="footer" class="footer">
         <p class="footer_p">2022 Copyright Axies Capital Solutions SA de CV - Todos los derechos reservados</p>
-        <p class="footer_p">Términos y condiciones del Servicio</p>
-        <p class="footer_p">Aviso de Privacidad</p>
+        <p class="footer_p cursorPointer">Términos y condiciones del Servicio</p>
+        <p class="footer_p cursorPointer">Aviso de Privacidad</p>
     </footer>
 </div>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 </body>
 </html>

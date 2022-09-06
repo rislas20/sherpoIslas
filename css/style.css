@@ -98,6 +98,7 @@ aside img{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 15px;
+    cursor: pointer;
 }
 
 .textBold{
@@ -129,6 +130,10 @@ aside img{
 
 .footer_p{
     font-size: 1.5rem;
+}
+
+.cursorPointer{
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
